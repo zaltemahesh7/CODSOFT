@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Mahesh Zalte</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <video src="./media/computer.mp4" autoplay muted loop></video>
+
+    <header>
+      <nav>
+        <div class="left">
+          <h1>Mahesh</h1>
+        </div>
+        <div class="right">
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Project's</a></li>
+            <li><a href="">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSectoin">
+        <div class="leftSection">
+          "Hi, My Name is <span class="name">Mahesh..</span>"
+          <div>and I am passionate</div>
+          <div id="element" style="color: #00ff00"></div>
+        </div>
+        <div class="rightSection">
+          <img src="./media/manbg2.png" alt="" />
+        </div>
+      </section>
+
+      <hr />
+
+      <section id="about">
+        <div class="container">
+          <div class="row">
+            <div class="about-col-1">
+              <img src="./media/AboutImg.png" alt="" />
+            </div>
+            <div class="about-col-2">
+              <h1 class="sub-title">About Me</h1>
+              <p id="desc">
+                Passionate web developer with a Bachelor's in Computer Science
+                (BCS), currently pursuing an MCA.Skilled in JavaScript, React
+                JS, Node.js, MongoDB, HTML5, CSS3, Bootstrap, Tailwind CSS, Git,
+                and GitHub.
+              </p>
+              <div class="tab-titles">
+                <p class="tab-links" onclick="opentab('skills')">Skill's</p>
+                <p
+                  class="tab-links active-link"
+                  onclick="opentab('experience')"
+                >
+                  Experience
+                </p>
+                <p class="tab-links" onclick="opentab('education')">
+                  Education
+                </p>
+              </div>
+              <div class="tab-contents" id="skills">
+                <ul>
+                  <li><span>Web Development</span><br />web app development</li>
+                  <li><span>Web Development</span><br />web app development</li>
+                  <li><span>Web Development</span><br />web app development</li>
+                </ul>
+              </div>
+              <div class="tab-contents active-tab" id="experience">
+                <ul>
+                  <li>
+                    <span>Sep-2023</span><br />Web Development Intern @ CodSoft
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="education">
+                <ul>
+                  <li><span>2022 - Current</span><br />MCA</li>
+                  <li><span>2019 - 2021</span><br />B.C.S</li>
+                  <li><span>2017 -1018</span><br />HSC</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="projects">
+        <h1 class="sub-title">projects</h1>
+        <div class="card">
+          <div class="card1">
+            <h1>Book-keeping-App: (year-2022-23)</h1>
+            <p>
+              Book keeping app built with Node/Express Mongodb/mongoose react,
+              Authentication(jwt)!
+            </p>
+          </div>
+          <div class="card1">
+            <h1>Html (2022-2023)</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              obcaecati sapiente debitis excepturi reiciendis asperiores dolor
+              magni accusantium, illum maxime atque, maiores fugit in porro. Cum
+              voluptas vel sunt culpa!
+            </p>
+          </div>
+          <div class="card1">
+            <h1>Html(2022-2023)</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+              obcaecati sapiente debitis excepturi reiciendis asperiores dolor
+              magni accusantium, illum maxime atque, maiores fugit in porro. Cum
+              voluptas vel sunt culpa!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="contact">
+        <h1 class="sub-title">Contact Me</h1>
+        <form action="">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" id="" cols="" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+
+      <section class="footer">
+        <div class="logo">Mahesh</div>
+        <div class="bar1">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+        <div class="bar2">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact Me</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["JavaScript!", "Web Developer!"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
